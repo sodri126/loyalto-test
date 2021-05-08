@@ -45,8 +45,11 @@ func main() {
 				}
 			}
 
-			formattedDice := fmt.Sprintf("%v", game[i].Dice)
-			fmt.Printf("Pemain #%d (%d): %s\n", i+1, game[i].Point, strings.Trim(formattedDice, "[]"))
+			formattedDice := strings.Trim(fmt.Sprintf("%v", game[i].Dice), "[]")
+			if formattedDice == "" {
+				formattedDice = "_"
+			}
+			fmt.Printf("Pemain #%d (%d): %s\n", i+1, game[i].Point, formattedDice)
 		}
 		fmt.Println("Setelah evaluasi:")
 
@@ -58,9 +61,12 @@ func main() {
 					game[i].Point++
 					deletedIndex = append(deletedIndex, j)
 				} else if game[i].Dice[j] == 1 && game[i].TotalOne != 0 {
-					move := i + 1
-					if move > n-1 {
-						move = 0
+					move := i
+					for {
+						move = moveDiceOne(move, n)
+						if len(game[move].Dice) > 0 {
+							break
+						}
 					}
 					game[i].TotalOne--
 					game[move].Dice = append(game[move].Dice, game[i].Dice[j])
@@ -79,8 +85,11 @@ func main() {
 
 		// output evaluation
 		for i := 0; i < len(game); i++ {
-			formattedDice := fmt.Sprintf("%v", game[i].Dice)
-			fmt.Printf("Pemain #%d (%d): %s\n", i+1, game[i].Point, strings.Trim(formattedDice, "[]"))
+			formattedDice := strings.Trim(fmt.Sprintf("%v", game[i].Dice), "[]")
+			if formattedDice == "" {
+				formattedDice = "_"
+			}
+			fmt.Printf("Pemain #%d (%d): %s\n", i+1, game[i].Point, formattedDice)
 		}
 
 		fmt.Println("=====================")
@@ -99,6 +108,14 @@ func main() {
 	}
 
 	fmt.Printf("Score tertinggi: %d, Pada pemain #%d", max, playerIndexHighScore)
+}
+
+func moveDiceOne(index, totalPlayer int) (move int) {
+	move = index + 1
+	if move > totalPlayer-1 {
+		move = 0
+	}
+	return
 }
 
 func deleteSlice(data []int, index int) []int {

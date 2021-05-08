@@ -9,55 +9,74 @@ Pemain:  3 Dadu:  4
 =====================
 Giliran 1 lempar dadu:
 =====================
-Pemain #1 (0): 6 6 1 5
-Pemain #2 (0): 5 5 4 1
-Pemain #3 (0): 2 6 4 6
+Pemain #1 (0): 2 1 4 6
+Pemain #2 (0): 1 4 6 5
+Pemain #3 (0): 4 3 4 4
 Setelah evaluasi:
-Pemain #1 (2): 5
-Pemain #2 (0): 5 5 4 1
-Pemain #3 (2): 2 4 1
+Pemain #1 (1): 2 4
+Pemain #2 (1): 4 5 1
+Pemain #3 (0): 4 3 4 4 1
 =====================
 Giliran 2 lempar dadu:
 =====================
-Pemain #1 (2): 3
-Pemain #2 (0): 1 5 3 4
-Pemain #3 (2): 2 6 5
+Pemain #1 (1): 6 4
+Pemain #2 (1): 3 6 3
+Pemain #3 (0): 6 5 2 6 6
 Setelah evaluasi:
-Pemain #1 (2): 3
-Pemain #2 (0): 5 3 4
-Pemain #3 (3): 2 5 1
+Pemain #1 (2): 4
+Pemain #2 (2): 3 3
+Pemain #3 (3): 5 2
 =====================
 Giliran 3 lempar dadu:
 =====================
-Pemain #1 (2): 4
-Pemain #2 (0): 3 6 2
-Pemain #3 (3): 3 1 3
+Pemain #1 (2): 1
+Pemain #2 (2): 3 5
+Pemain #3 (3): 2 2
 Setelah evaluasi:
-Pemain #1 (2): 4 1
-Pemain #2 (1): 3 2
-Pemain #3 (3): 3 3
+Pemain #1 (2): _
+Pemain #2 (2): 3 5 1
+Pemain #3 (3): 2 2
 =====================
 Giliran 4 lempar dadu:
 =====================
-Pemain #1 (2): 2 6
-Pemain #2 (1): 2 6
-Pemain #3 (3): 5 6
+Pemain #1 (2): _
+Pemain #2 (2): 2 6 6
+Pemain #3 (3): 5 3
 Setelah evaluasi:
-Pemain #1 (3): 2
-Pemain #2 (2): 2
-Pemain #3 (4): 5
+Pemain #1 (2): _
+Pemain #2 (4): 2
+Pemain #3 (3): 5 3
 =====================
 Giliran 5 lempar dadu:
 =====================
-Pemain #1 (3): 3
-Pemain #2 (2): 6
+Pemain #1 (2): _
+Pemain #2 (4): 2
+Pemain #3 (3): 4 6
+Setelah evaluasi:
+Pemain #1 (2): _
+Pemain #2 (4): 2
+Pemain #3 (4): 4
+=====================
+Giliran 6 lempar dadu:
+=====================
+Pemain #1 (2): _
+Pemain #2 (4): 4
+Pemain #3 (4): 4
+Setelah evaluasi:
+Pemain #1 (2): _
+Pemain #2 (4): 4
+Pemain #3 (4): 4
+=====================
+Giliran 7 lempar dadu:
+=====================
+Pemain #1 (2): _
+Pemain #2 (4): 4
 Pemain #3 (4): 1
 Setelah evaluasi:
-Pemain #1 (3): 3 1
-Pemain #2 (3): 
-Pemain #3 (4): 
+Pemain #1 (2): _
+Pemain #2 (4): 4 1
+Pemain #3 (4): _
 =====================
-Score tertinggi: 4, Pada pemain #3
-Process finished with the exit code 0
+Score tertinggi: 4, Pada pemain #2
 
 ```
